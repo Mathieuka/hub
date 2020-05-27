@@ -25,6 +25,20 @@
     "crowdsecurity/base-http-scenarios"
    ]
   },
+  "crowdsecurity/bad_user_agents": {
+   "path": "collections/crowdsecurity/bad_user_agents.yaml",
+   "version": "0.1",
+   "versions": {
+    "0.1": {
+     "digest": "7ccf098dc01546b25c76a69095dab0f3a3ba3c5b86edbaa8542588b0e330cfc5",
+     "deprecated": false
+    }
+   },
+   "content": "c2NlbmFyaW86CiAtIGNyb3dkc2VjdXJpdHkvYmFkLXVzZXItYWdlbnRzCmRhdGFzZXQ6CiAtIGNyb3dkc2VjdXJpdHkvYmFkLXVzZXItYWdlbnRzCmRlc2NyaXB0aW9uOiAibmdpbnggc3VwcG9ydCA6IHBhcnNlciBhbmQgZ2VuZXJpYyBodHRwIHNjZW5hcmlvcyIKYXV0aG9yOiBjcm93ZHNlY3VyaXR5CnRhZ3M6CiAgLSBsaW51eAogIC0gbmdpbngKICAtIGNyYXdsCiAgLSBzY2FuCgo=",
+   "description": "nginx support : parser and generic http scenarios",
+   "author": "crowdsecurity",
+   "labels": null
+  },
   "crowdsecurity/base-http-scenarios": {
    "path": "collections/crowdsecurity/base-http-scenarios.yaml",
    "version": "0.3",
@@ -260,6 +274,21 @@
    "long_description": "VGhpcyBhcGFjaGUyIHBhcnNlciBzdXBwb3J0IGFjY2VzcyBhbmQgZXJyb3IgbG9ncyBpbiB0aGUgSFRUUEQgQ09NQklORUQgTE9HIHN0YW5kYXJkIGZvcm1hdC4K",
    "content": "I0FwYWNoZSBhY2Nlc3MgbG9ncwojZGVidWc6IHRydWUKCmZpbHRlcjogImV2dC5QYXJzZWQucHJvZ3JhbSA9PSAnYXBhY2hlMiciCm9uc3VjY2VzczogbmV4dF9zdGFnZQpuYW1lOiBjcm93ZHNlY3VyaXR5L2FwYWNoZTItbG9ncwpkZXNjcmlwdGlvbjogIlBhcnNlIEFwYWNoZTIgYWNjZXNzIGFuZCBlcnJvciBsb2dzIgpncm9rOgogIG5hbWU6IENPTUJJTkVEQVBBQ0hFTE9HCiAgYXBwbHlfb246IG1lc3NhZ2UKIyB0aGVzZSBvbmVzIGFwcGx5IGZvciBib3RoIGdyb2sgcGF0dGVybnMKc3RhdGljczoKICAtIG1ldGE6IGxvZ190eXBlCiAgICB2YWx1ZTogaHR0cF9hY2Nlc3MtbG9nCiAgLSB0YXJnZXQ6IGV2dC5TdHJUaW1lCiAgICBleHByZXNzaW9uOiBldnQuUGFyc2VkLnRpbWVzdGFtcAogIC0gbWV0YTogc2VydmljZQogICAgdmFsdWU6IGh0dHAKICAtIG1ldGE6IHNvdXJjZV9pcAogICAgZXhwcmVzc2lvbjogZXZ0LlBhcnNlZC5jbGllbnRpcAogIC0gbWV0YTogaHR0cF9zdGF0dXMKICAgIGV4cHJlc3Npb246IGV2dC5QYXJzZWQucmVzcG9uc2UKICAtIG1ldGE6IGh0dHBfcGF0aAogICAgZXhwcmVzc2lvbjogZXZ0LlBhcnNlZC5yZXF1ZXN0",
    "description": "Parse Apache2 access and error logs",
+   "author": "crowdsecurity",
+   "labels": null
+  },
+  "crowdsecurity/apache3-logs": {
+   "path": "parsers/s01-parse/crowdsecurity/apache3-logs.yaml",
+   "stage": "s01-parse",
+   "version": "0.1",
+   "versions": {
+    "0.1": {
+     "digest": "e3f7e531a3277205af9f3d4598c96c2efd04d158c3a4765a0cf08b88357afceb",
+     "deprecated": false
+    }
+   },
+   "content": "I0FwYWNoZSBhY2Nlc3MgbG9ncwojZGVidWc6IHRydWUKCmZpbHRlcjogImV2dC5QYXJzZWQucHJvZ3JhbSA9PSAnYXBhY2hlMyciCm9uc3VjY2VzczogbmV4dF9zdGFnZQpuYW1lOiBjcm93ZHNlY3VyaXR5L2FwYWNoZTMtbG9ncwpkZXNjcmlwdGlvbjogIlBhcnNlIEFwYWNoZTMgYWNjZXNzIGFuZCBlcnJvciBsb2dzIgpncm9rOgogIG5hbWU6IENPTUJJTkVEQVBBQ0hFTE9HCiAgYXBwbHlfb246IG1lc3NhZ2UKIyB0aGVzZSBvbmVzIGFwcGx5IGZvciBib3RoIGdyb2sgcGF0dGVybnMKc3RhdGljczoKICAtIG1ldGE6IGxvZ190eXBlCiAgICB2YWx1ZTogaHR0cF9hY2Nlc3MtbG9nCiAgLSB0YXJnZXQ6IGV2dC5TdHJUaW1lCiAgICBleHByZXNzaW9uOiBldnQuUGFyc2VkLnRpbWVzdGFtcAogIC0gbWV0YTogc2VydmljZQogICAgdmFsdWU6IGh0dHAKICAtIG1ldGE6IHNvdXJjZV9pcAogICAgZXhwcmVzc2lvbjogZXZ0LlBhcnNlZC5jbGllbnRpcAogIC0gbWV0YTogaHR0cF9zdGF0dXMKICAgIGV4cHJlc3Npb246IGV2dC5QYXJzZWQucmVzcG9uc2UKICAtIG1ldGE6IGh0dHBfcGF0aAogICAgZXhwcmVzc2lvbjogZXZ0LlBhcnNlZC5yZXF1ZXN0",
+   "description": "Parse Apache3 access and error logs",
    "author": "crowdsecurity",
    "labels": null
   },
@@ -627,6 +656,24 @@
    "labels": {
     "remediation": "true",
     "type": "scan"
+   }
+  },
+  "crowdsecurity/http-bad-user-agents": {
+   "path": "scenarios/crowdsecurity/http-bad-user-agents.yaml",
+   "version": "0.1",
+   "versions": {
+    "0.1": {
+     "digest": "96b224f1e4b19dc8dc0d1fdd64d3c83e2771d688dc3d031cbd2e6a79c0e617da",
+     "deprecated": false
+    }
+   },
+   "content": "dHlwZTogbGVha3kKbmFtZTogY3Jvd2RzZWN1cml0eS9odHRwLWJhZC11c2VyLWFnZW50cwpkZXNjcmlwdGlvbjogIkRldGVjdCBiYWQgdXNlciBhZ2VudHMiCmZpbHRlcjogImV2dC5NZXRhLmxvZ190eXBlIGluIFsnaHR0cF9hY2Nlc3MtbG9nJywgJ2h0dHBfZXJyb3ItbG9nJ10gJiYgZXZ0LlBhcnNlZC5odHRwX1VBIGluIExvYWRGaWxlKCcvYmFkLXVhL2JhZC11YS50eHQnKSIKIy9ldGMvY3Jvd2RzZWMvYmFkLXVhLnR4dApkYXRhOgogLSB0YXJnZXQ6IC4vYmFkLXVhL2JhZC11YS50eHQKICAgc291cmNlX3VyaTogaHR0cDovL2dpdGh1Yi5jb20vY3Jvd2RzZWN1cml0eS9odWIvZGF0YXNldHMvYmFkLXVhLnR4dApsZWFrc3BlZWQ6IDAuNXMKY2FwYWNpdHk6IDUKY2FjaGVfc2l6ZTogNQpncm91cGJ5OiBldnQuTWV0YS5zb3VyY2VfaXAKYmxhY2tob2xlOiAxbQpsYWJlbHM6CiBzZXJ2aWNlOiBodHRwCiB0eXBlOiBjcmF3bAogcmVtZWRpYXRpb246IHRydWUK",
+   "description": "Detect bad user agents",
+   "author": "crowdsecurity",
+   "labels": {
+    "remediation": "true",
+    "service": "http",
+    "type": "crawl"
    }
   },
   "crowdsecurity/http-bf-wordpress_bf": {
