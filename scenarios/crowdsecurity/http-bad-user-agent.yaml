@@ -1,6 +1,7 @@
 type: leaky
 format: 2.0
 #debug: true
+#test commit
 name: crowdsecurity/http-bad-user-agent
 description: "Detect bad user-agents"
 filter: evt.Meta.log_type in ['http_access-log', 'http_error-log'] && evt.Parsed.http_user_agent in File("bad_user_agents.txt")
